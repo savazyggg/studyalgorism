@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 960px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#width{
+    width: 80%;
+    height: 52px;
+}
+
+.container {
+    width: 960px;
+    text-align: center;
+}
+
+ul li {
+    width: 239px;
+    height: 52px;
+    display: inline-block;
+    margin: 0px -3px 20px 0;
+    text-align: center;
+    line-height: 52px;
+}
+
+
+li.one{
+    background-color: rgba(53, 101, 64, 0.339);
+}
+li.two{
+    background-color: rgba(131, 182, 102, 0.339);
+}
+li.three{
+    background-color: rgba(64, 144, 162, 0.339);
+}
+li.four{
+    background-color: rgba(158, 120, 81, 0.339);
+}
+
+/*hover때(조건) 어떻게 바꿀건가가 transition, 일정하고 몇초뒤에 몇초동안 등 조정가능
+해당 시점에서는 필요없으므로 생략*/
+.one:hover{background-color:grey;} 
+.two:hover{background-color:grey;} 
+.three:hover{background-color:grey;} 
+.four:hover{background-color:grey;}
+
+
+.imgtrans{
+
+    width: 960px;
+    height: 500px;
+    background-image: url(1.jpg);
+    margin: 0 0 20px 0;
+    animation: backgroundImage 20s step-start infinite;
+
+}
+/*궁금
+1. 바뀌는 애니 효과를 가진 이미지에 url은 어떻게 삽입?
+2. 마우스를 이미지에 가져갈때 멈추는것?*/
+@keyframes backgroundImage {
+    0% {background-image: url(1.jpg);}
+    25% {background-image: url(2.jpg);}
+    50% {background-image: url(3.jpg);}
+    75% {background-image: url(4.jpg);}
+}
+
